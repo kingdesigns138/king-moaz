@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع تصميم إلكتروني</title>
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #6a11cb;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* معرض الأعمال */
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+        .portfolio-item img {
+            width: 100%; /* تجعل الصورة تأخذ عرض العنصر المحيط بها */
+            height: auto; /* تحافظ على نسبة العرض إلى الارتفاع */
+            display: block; /* تمنع أي مسافات غير مرغوب فيها أسفل الصورة */
+        }
+        .portfolio-item p {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* نموذج الاتصال */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background: #6a11cb;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #2575fc;
+        }
+
+        /* معلومات الاتصال */
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-info a {
+            color: #2575fc;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- الهيدر -->
+    <header>
+        <h1>مرحبًا بكم في موقع التصميم الإلكتروني</h1>
+    </header>
+
+    <!-- القائمة -->
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home">
+        <h2>الرئيسية</h2>
+        <p>مرحبًا! أنا مصمم إلكتروني محترف، وهنا يمكنك رؤية أعمالي والتواصل معي.</p>
+    </section>
+
+    <!-- من نحن -->
+    <section id="about">
+        <h2>من نحن</h2>
+        <p>نحن فريق من المصممين المحترفين الذين يعملون على تقديم أفضل الحلول الإبداعية لعملائنا.</p>
+    </section>
+
+    <!-- أعمالنا -->
+    <section id="portfolio">
+        <h2>أعمالنا</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="C:\Users\Bs\Desktop\مجلد جديد\images\Picsart_25-02-04_21-12-30-009.jpg" alt="تصميم خطوبة للنجم محمد">
+                <p>تصميم خطوبة للنجم محمد قطامي باجري.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="C:\Users\Bs\Desktop\مجلد جديد\images\✨ _UCL ✨(JPG)_10.jpg" alt="تصميم رياضي جميل ">
+                <p>لاشي هناك اجمل من ريال مدريد.</p>
+            </div>
+            <div class="portfolio-item">
+                <video controls width="100%">
+                    <source src="videos/فيديو-1.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <p>هذا فيديو لعمل معين مع شرح مفصل.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- اتصل بنا -->
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" rows="5" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+
+        <!-- معلومات الاتصال -->
+        <div class="contact-info">
+            <p>رقم الهاتف: <a href="tel:+966123456789">+967772247719</a></p>
+            <p>البريد الإلكتروني: <a href="mailto:kingdesigns138@gmail.com">kingdesigns138@gmail.com</a></p>
+            <p>الواتساب: <a href="https://wa.me/message/MGLYN35C4EICC1" target="_blank">اضغط هنا للتواصل عبر الواتساب</a></p>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>© 2023 موقع التصميم الإلكتروني. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
